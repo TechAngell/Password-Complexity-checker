@@ -26,13 +26,13 @@ def main():
         
         strength = password_strength_check(password)
 
-        if strength == 4:
+        if strength == 0:
             print("The Password is weak! make it more complex.")
-        elif strength == 3:
+        elif strength == 1:
             print("Password is not strong enough!")
         elif strength == 2:
             print("Password is strong!")
-        elif strength == 1:
+        elif strength == 3:
             print("Password is very strong!")
         elif strength == 4:
             print("Password is extremely strong!")
